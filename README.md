@@ -12,9 +12,9 @@ Vanilla HTML, CSS, and JavaScript — no frameworks, no build step.
 ```
 nunez-sons-plumbing/     <- the entire site (deployable as-is)
 ├── index.html           Home
-├── commercial.html      Commercial services (flagship)
-├── residential.html     Residential services
-├── gallery.html         Our Work (placeholder photos + lightbox)
+├── services.html        Commercial (primary focus) + residential services
+├── gallery.html         Our Work (placeholder photos + lightbox, no captions yet)
+├── about.html           About Eric Nunez / company story
 ├── contact.html         Call / text / email (no contact form)
 ├── styles.css           Single stylesheet
 └── script.js            Single script (header, nav, reveals, counters, lightbox)

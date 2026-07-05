@@ -804,6 +804,27 @@ p {
   transform: translateX(4px);
 }
 
+/* Inline text link with a trailing arrow, for use on light backgrounds */
+.inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  font-family: var(--font-head);
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.inline-link .icon {
+  width: 18px;
+  height: 18px;
+  transition: transform var(--t-fast) var(--ease);
+}
+
+.inline-link:hover .icon {
+  transform: translateX(4px);
+}
+
 /* Stats */
 .stats-grid {
   display: grid;
@@ -944,6 +965,33 @@ p {
   font-size: 0.9875rem;
 }
 
+/* Image placeholder — swap for a real project photo per service */
+.svc-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px dashed rgba(15, 30, 51, 0.22);
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(15, 30, 51, 0.035),
+    rgba(15, 30, 51, 0.035) 10px,
+    rgba(15, 30, 51, 0.015) 10px,
+    rgba(15, 30, 51, 0.015) 20px
+  );
+}
+
+.svc-media-label {
+  font-family: var(--font-head);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 /* Closing CTA panel */
 .cta-panel {
   position: relative;
@@ -1036,31 +1084,6 @@ p {
 
 .gallery-item:hover .gallery-thumb img {
   transform: scale(1.045);
-}
-
-.gallery-caption {
-  display: block;
-  padding: 1rem 1.25rem 1.1rem;
-}
-
-.gallery-caption .cap-title {
-  display: block;
-  font-family: var(--font-head);
-  font-size: 0.9875rem;
-  font-weight: 600;
-  color: var(--navy);
-  line-height: 1.35;
-}
-
-.gallery-caption .cap-meta {
-  display: block;
-  margin-top: 0.25rem;
-  font-size: 0.84375rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--copper);
-  font-family: var(--font-head);
-  font-weight: 600;
 }
 
 /* Lightbox */
