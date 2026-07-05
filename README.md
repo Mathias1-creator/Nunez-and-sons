@@ -32,7 +32,7 @@ python3 -m http.server 8000 --directory nunez-sons-plumbing
 ### GitHub Pages (automatic)
 
 `.github/workflows/deploy-pages.yml` publishes the `nunez-sons-plumbing/`
-folder to GitHub Pages on every push to the default branch.
+folder to GitHub Pages on every push to `main`.
 
 **One-time setup:** if the first workflow run fails at the "Setup Pages" step
 with a 403 error, GitHub would not let the workflow enable Pages on its own.

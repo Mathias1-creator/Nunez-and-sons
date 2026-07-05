@@ -3,7 +3,6 @@ name: Deploy site to GitHub Pages
 on:
   push:
     branches:
-      - claude/nunez-sons-plumbing-site-o1gap4
       - main
   workflow_dispatch:
 
