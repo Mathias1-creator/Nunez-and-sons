@@ -176,7 +176,9 @@
      Gallery lightbox (keyboard + tap to close)
      ------------------------------------------------------------------ */
   function initLightbox() {
-    var items = Array.prototype.slice.call(document.querySelectorAll('.gallery-item'));
+    /* Only wire tiles that actually link to a photo — plain <div> placeholder
+       tiles (no photos yet) are inert and should not open the lightbox. */
+    var items = Array.prototype.slice.call(document.querySelectorAll('a.gallery-item[href]'));
     var lightbox = document.getElementById('lightbox');
     if (!items.length || !lightbox) return;
 
